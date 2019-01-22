@@ -1,0 +1,22 @@
+// 19.01.20
+{
+    // git
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    //
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    // go
+    "go.coverageOptions": "showUncoveredCodeOnly",
+    "go.testOnSave": true,
+    //
+    "editor.minimap.enabled": false,
+    // theme
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    // terminal
+    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+    "terminal.integrated.shell.osx": "/bin/zsh"
+}
