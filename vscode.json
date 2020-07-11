@@ -1,22 +1,103 @@
-// 19.01.20
 {
-    // git
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    "git.confirmSync": false,
-    //
-    "window.zoomLevel": 0,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    // go
-    "go.coverageOptions": "showUncoveredCodeOnly",
-    "go.testOnSave": true,
-    //
-    "editor.minimap.enabled": false,
-    // theme
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
-    // terminal
-    "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-    "terminal.integrated.shell.osx": "/bin/zsh"
+	// git
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"gitlens.insiders": true,
+	"git.confirmForcePush": true,
+	"git.inputValidation": "always",
+	"git.showProgress": true,
+	"git.autoStash": true,
+	"git.openDiffOnClick": true,
+	"git.suggestSmartCommit": false,
+	// UI
+	"window.zoomLevel": 0,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	// go
+	"go.formatTool": "goimports",
+	"go.coverageOptions": "showUncoveredCodeOnly",
+	"go.testOnSave": true,
+	"go.useLanguageServer": true, // !
+	// editor
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 13,
+	"editor.insertSpaces": false,
+	"editor.autoIndent": "full",
+	"editor.detectIndentation": false,
+	"editor.formatOnSave": true,
+	"editor.renderFinalNewline": true,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "boundary",
+	"editor.renderIndentGuides": true,
+	"editor.renderControlCharacters": true,
+	"editor.autoClosingQuotes": "languageDefined",
+	// theme
+	"workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+	"workbench.iconTheme": "material-icon-theme",
+	// terminal
+	"terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+	"terminal.integrated.shell.osx": "/bin/zsh",
+	// k8s
+	"vs-kubernetes": {
+		"vs-kubernetes.helm-path": "/Users/${env:USER}/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+		"vs-kubernetes.draft-path": "/Users/${env:USER}/.vs-kubernetes/tools/draft/darwin-amd64/draft",
+		"vs-kubernetes.minikube-path": "/Users/${env:USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+		"vs-kubernetes.minikube-path.mac": "/Users/${env:USER}/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+	},
+	// miscellaneous
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"files.autoSave": "afterDelay",
+	"markdownlint.run": "onSave",
+	"diffEditor.ignoreTrimWhitespace": true,
+	"telemetry.enableTelemetry": false,
+	"json.format.enable": true,
+	"yaml.format.enable": true,
+	"[yaml]": {
+		"editor.insertSpaces": true,
+		"editor.tabSize": 2,
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": false,
+			"strings": true
+		}
+	},
+	"peacock.favoriteColors": [
+		{
+			"name": "Angular Red",
+			"value": "#dd0531"
+		},
+		{
+			"name": "Azure Blue",
+			"value": "#007fff"
+		},
+		{
+			"name": "JavaScript Yellow",
+			"value": "#f9e64f"
+		},
+		{
+			"name": "Mandalorian Blue",
+			"value": "#1857a4"
+		},
+		{
+			"name": "Node Green",
+			"value": "#215732"
+		},
+		{
+			"name": "React Blue",
+			"value": "#61dafb"
+		},
+		{
+			"name": "Something Different",
+			"value": "#832561"
+		},
+		{
+			"name": "Svelte Orange",
+			"value": "#ff3d00"
+		},
+		{
+			"name": "Vue Green",
+			"value": "#42b883"
+		}
+	]
 }
