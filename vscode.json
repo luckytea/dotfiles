@@ -1,49 +1,96 @@
 {
+	// files
+	"files.trimFinalNewlines": false,
+	"files.autoSave": "afterDelay",
+	"files.autoSaveDelay": 1000,
+	"files.exclude": {
+		"**/.git": false
+	},
+	"search.followSymlinks": false,
+	// editor
+	"editor.formatOnSave": true,
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 13,
+	"editor.insertSpaces": true,
+	"editor.renderFinalNewline": "on",
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "boundary",
+	"editor.renderControlCharacters": true,
+	"editor.autoClosingQuotes": "languageDefined",
+	"editor.largeFileOptimizations": true,
+	"editor.unicodeHighlight.ambiguousCharacters": true,
+	"editor.guides.indentation": true,
+	"editor.unicodeHighlight.allowedCharacters": {
+		"К": true
+	},
+	// explorer
+	"explorer.confirmDelete": true,
+	"explorer.confirmDragAndDrop": false,
+	// workbench
+	"workbench.colorTheme": "One Dark Pro Mix",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter-notebook"
+	},
+	"workbench.colorCustomizations": {
+		"editorGhostText.foreground": "#7A8E96"
+	},
+	// terminal
+	"terminal.integrated.defaultProfile.osx": "fish",
+	"terminal.external.osxExec": "fish",
+	"terminal.integrated.fontFamily": "Source Code Pro for Powerline",
+	"debug.console.fontFamily": "Source Code Pro for Powerline",
+	"output.smartScroll.enabled": false,
 	// git
 	"git.autofetch": true,
 	"git.confirmSync": false,
 	"git.confirmForcePush": true,
-	"git.inputValidation": "always",
+	"git.inputValidation": true,
 	"git.showProgress": true,
 	"git.autoStash": true,
 	"git.openDiffOnClick": true,
 	"git.suggestSmartCommit": false,
-	// window
-	"window.zoomLevel": 0,
+	"git.ignoreRebaseWarning": true,
+	"git.allowForctesePush": true,
+	"githubPullRequests.createOnPublishBranch": "never",
 	// go
+	"go.lintOnSave": "workspace",
+	"go.vetOnSave": "workspace",
 	"go.lintTool": "golangci-lint",
-	"go.formatTool": "goimports",
+	"go.testOnSave": false,
+	"go.coverOnSave": false,
+	"go.useCodeSnippetsOnFunctionSuggest": true,
+	"go.formatTool": "default",
 	"go.coverageOptions": "showUncoveredCodeOnly",
 	"go.useLanguageServer": true,
-	"go.buildOnSave": "off",
-	"go.lintOnSave": "off",
-	"go.vetOnSave": "off",
+	"gopls": {
+		"formatting.gofumpt": true,
+	},
 	"go.toolsManagement.autoUpdate": true,
-	// editor
-	"editor.minimap.enabled": false,
-	"editor.fontSize": 13,
-	"editor.insertSpaces": true,
-	"editor.renderFinalNewline": true,
-	"editor.renderLineHighlight": "all",
-	"editor.renderWhitespace": "boundary",
-	"editor.renderIndentGuides": true,
-	"editor.renderControlCharacters": true,
-	"editor.autoClosingQuotes": "languageDefined",
-	"editor.largeFileOptimizations": true,
-	// workbench
-	"workbench.colorTheme": "Monokai Vibrant",
-	"workbench.iconTheme": "material-icon-theme",
-	// terminal
-	"terminal.integrated.fontFamily": "Source Code Pro for Powerline",
-	"terminal.external.linuxExec": "zsh",
-	// miscellaneous
-	"files.trimFinalNewlines": true,
-	"files.autoSave": "afterDelay",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"telemetry.enableTelemetry": false,
+	"go.inlayHints.assignVariableTypes": true,
+	"go.inlayHints.compositeLiteralFields": true,
+	"go.inlayHints.compositeLiteralTypes": true,
+	"go.inlayHints.constantValues": true,
+	"go.inlayHints.functionTypeParameters": true,
+	"go.inlayHints.parameterNames": true,
+	"go.inlayHints.rangeVariableTypes": true,
+	// python
+	"python.terminal.activateEnvironment": false,
+	// markdownlint
+	"markdownlint.run": "onSave",
+	"markdownlint.config": {
+		"MD024": false,
+		"MD013": false
+	},
+	// sql
+	"[sql]": {
+		"editor.formatOnSave": false,
+	},
+	// json
 	"json.format.enable": true,
-	"yaml.format.enable": true,
+	// yaml
+	"yaml.format.enable": false,
 	"[yaml]": {
+		"editor.autoIndent": "advanced",
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
 		"editor.quickSuggestions": {
@@ -52,12 +99,22 @@
 			"strings": true
 		}
 	},
-	// markdownlint
-	"markdownlint.run": "onSave",
-	"markdownlint.config": {
-		"MD024": false,
-		"MD013": false
+	// miscellaneous
+	"diffEditor.ignoreTrimWhitespace": false,
+	"telemetry.telemetryLevel": "off",
+	"redhat.telemetry.enabled": false,
+	"todo-tree.filtering.excludeGlobs": [
+		"**/node_modules",
+		"**/vendor"
+	],
+	"[dockerfile]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
 	},
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,	
+	"editor.unicodeHighlight.nonBasicASCII": false,
+	"editor.unicodeHighlight.allowedLocales": {
+		"ru": true
+	},
+	"css.format.newlineBetweenRules": false,
+	"css.format.newlineBetweenSelectors": false,
+	"files.insertFinalNewline": true
 }
